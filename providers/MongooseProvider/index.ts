@@ -1,8 +1,10 @@
 import type { ApplicationContract } from '@ioc:Adonis/Core/Application'
+// @ts-ignore
 import { mongooseConfig } from 'Config/mongoose';
 
 export default class MongooseProvider {
   constructor(protected app: ApplicationContract) {
+    //
   }
 
   public register() {
